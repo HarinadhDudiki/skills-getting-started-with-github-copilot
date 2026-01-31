@@ -15,6 +15,18 @@ body {
   background-color: #f5f5f5;
 }
 
+/* CSS to hide bullet points */
+ul.participants-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+
 header {
   text-align: center;
   padding: 20px 0;
@@ -72,6 +84,40 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+/* New: Participants section styles */
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-section h5 {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  margin-bottom: 6px;
+}
+
+.participants-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.participants-list li {
+  background-color: #f1f4ff;
+  border: 1px solid #dbe3ff;
+  color: #1a237e;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  display: list-item; /* keep bullet */
+}
+
+.no-participants {
+  margin-top: 8px;
+  color: #666;
+  font-style: italic;
 }
 
 .form-group {
